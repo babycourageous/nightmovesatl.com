@@ -22,7 +22,16 @@ function owl({ addUtilities, config, e }) {
 module.exports = {
   theme: {
     fontFamily: {
-      sans: 'Montserrat, sans-serif',
+      serif: 'Nixie One, serif',
+      sans: 'PT Sans, sans-serif',
+    },
+    colors: {
+      'gray-darkest': '#171717',
+      'gray-dark': '#28211F',
+      'pink-dark': '#D834A5',
+      'purple-light': '#D393FB',
+      purple: '#8484FC',
+      white: '#fff',
     },
     extend: {},
   },
