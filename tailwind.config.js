@@ -4,7 +4,7 @@ function owl({ addUtilities, config, e }) {
   const newUtilities = {}
   const spacing = config('theme.spacing')
 
-  Object.keys(spacing).forEach(key => {
+  Object.keys(spacing).forEach((key) => {
     const className = `.${e(`o-${key}`)} > * + *`
     const marginTop = spacing[key]
 
