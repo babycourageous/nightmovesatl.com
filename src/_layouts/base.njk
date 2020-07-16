@@ -9,12 +9,17 @@
       <title>{{site.title}}</title>
     {% endif %}
     <meta name="Description" content="{{ renderData.description or description or site.description }}">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nixie+One&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ '/css/styles.css' | url }}">
   </head>
-  <body class="flex flex-col min-h-screen font-sans bg-gray-800">
+  <body class="bg-gray-darkest">
     <!-- include svg sprite -->
     <span style="display:none;">{% include "svg/sprite.symbol.svg" %}</span>
+    <header class="flex items-center justify-center py-10">
+      <div class="w-40">
+        <img src="assets/images/nightmoves.png" alt=""/>
+      </div>
+    </header>
     <main class="container flex flex-col justify-center items-center flex-1 mx-auto py-8">
       {{ content | safe }}
     </main>
