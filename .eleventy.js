@@ -30,6 +30,7 @@ module.exports = function(eleventyConfig) {
     return collection.getFilteredByGlob('./src/posts/**')
   })
 
+  eleventyConfig.addPassthroughCopy({ 'src/_assets/images': 'assets/images' })
   eleventyConfig.addPassthroughCopy({ 'src/_assets/favicons': '/' })
 
   return {
