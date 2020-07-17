@@ -9,6 +9,7 @@
       <title>{{site.title}}</title>
     {% endif %}
     <meta name="Description" content="{{ renderData.description or description or site.description }}">
+    {%- include "favicons.njk" -%}
     <link href="https://fonts.googleapis.com/css2?family=Nixie+One&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ '/css/styles.css' | url }}">
   </head>
