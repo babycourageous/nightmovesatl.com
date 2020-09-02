@@ -16,12 +16,8 @@
   <body class="p-4 bg-gray-darkest">
     <!-- include svg sprite -->
     <span style="display:none;">{% include "svg/sprite.symbol.svg" %}</span>
-    <header class="flex items-center justify-center py-10">
-      <div class="w-40">
-        <img src="assets/images/nightmoves.png" alt=""/>
-      </div>
-    </header>
-    <main class="container flex flex-col justify-center items-center flex-1 mx-auto py-8">
+    {%- include "header.njk" -%}
+    <main class="container flex flex-col justify-center items-center flex-1 mx-auto">
       {{ content | safe }}
     </main>
     <script src="/javascript/index.js"></script>
